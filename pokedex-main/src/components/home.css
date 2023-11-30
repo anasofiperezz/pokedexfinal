@@ -1,0 +1,132 @@
+/* src/components/Pokedex.css */
+
+
+.pokedex-container {
+    width: 300px;
+    height: 500px;
+    background: #ff0000; /* Rojo Pokedex */
+    border: 4px solid #000000; /* Borde negro */
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
+    display:flex;
+    align-items: center; /* Centrado vertical */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pokedex-screen-container {
+    background: #000000; /* Fondo negro para la pantalla */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .pokedex-screen {
+    width: 100%;
+    height: 150px;
+    background: #dddddd; /* Gris para la pantalla apagada */
+    border-radius: 5px;
+  }
+  
+  .screen-on {
+    background: #ffffff; /* Blanco para la pantalla encendida */
+  }
+  
+  .pokedex-lights {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #444444; /* Gris oscuro para los focos apagados */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el efecto de encendido */
+  }
+  
+  .light.blue { background-color: blue; }
+  .light.green { background-color: green; }
+  .light.yellow { background-color: yellow; }
+  
+  .light-on {
+    box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.7); /* Brillo para indicar que el foco está encendido */
+  }
+  
+  .pokedex-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #dcdcdc; /* Gris para los botones */
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .go-button {
+    background-color: #4caf50; /* Verde para el botón de ir a la Pokedex */
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .button:active {
+    transform: translateY(2px);
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos responsivos para pantallas más pequeñas */
+    .pokedex-container {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+  
+  /* src/components/home.css */
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura completa de la ventana */
+    background-color: black; /* Fondo negro */
+  }
+  
+  .pokedex-container {
+    width: 300px;
+    height: 500px;
+    /* Tus estilos existentes para la Pokédex */
+  }
+  
+  /* Resto de tus estilos */
+  /* Asegúrate de que tu archivo home.css esté en la misma carpeta que tu componente Home y que los nombres de las clases coincidan */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .pokedex-container {
+    /* Tus estilos existentes para la Pokédex */
+    margin-bottom: 20px; /* Espacio para el botón de inicio de sesión */
+  }
+  
+  .login-button-container {
+    text-align: center;
+  }
+  

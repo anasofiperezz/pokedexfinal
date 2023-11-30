@@ -1,0 +1,66 @@
+.pokemon-team {
+    /* Estilos para el contenedor del equipo */
+    position: fixed; /* Fija el contenedor a una posición en la pantalla */
+    left: 0; /* Alinea el contenedor al lado izquierdo de la pantalla */
+    top: 0; /* Alinea el contenedor al inicio de la pantalla */
+    width: 250px; /* Ancho del contenedor */
+    max-height: 100vh; /* Altura máxima, 100% del alto de la ventana */
+    overflow-y: auto; /* Permite desplazarse verticalmente si el contenido es muy largo */
+    background-color: #f8f8f8; /* Color de fondo para el contenedor */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    padding: 10px; /* Espaciado interno */
+    z-index: 10000; /* Asegura que el contenedor se sitúe por encima de otros elementos */
+}
+.pokemon-card {
+    margin-bottom: 30px;
+}
+
+.pokemon-stats {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pokemon-stats h4 {
+    margin: 0 0 10px 0;
+}
+
+.pokemon-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pokemon-stats li {
+    margin-bottom: 5px;
+}
+
+
+  
+  /* Estilo para el contenedor de la cuadrícula de Pokémon */
+.pokemon-grid {
+  display: grid; /* Utiliza un diseño de cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+  gap: 20px; /* Espacio entre las tarjetas de Pokémon */
+}
+
+/* Estilo de la tarjeta de Pokémon dentro de la cuadrícula */
+.pokemon-card {
+  background-color:yellow;/* Café */
+  color:black; /* Texto en color blanco */
+  transition: transform 0.2s; /* Transición suave al aumentar de tamaño */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilo de la tarjeta de Pokémon al pasar el mouse */
+.pokemon-card:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% al pasar el mouse */
+}
+
+.pokemon-cart {
+    background-color:red; /* Café */
+    color:black; /* Texto en color blanco */
+    transition: transform 0.2s; /* Transición suave al aumentar de tamaño */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  }
+  
+
